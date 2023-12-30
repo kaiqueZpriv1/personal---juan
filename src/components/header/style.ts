@@ -5,6 +5,7 @@ export const HeaderS = styled.header`
 	background-color: #25262b;
 	height: 75px;
 	position: fixed;
+	z-index: 9;
 	.container-header {
 		display: flex;
 		justify-content: space-between;
