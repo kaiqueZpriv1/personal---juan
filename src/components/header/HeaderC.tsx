@@ -9,25 +9,25 @@ export const HeaderC = () => {
 			<div className='container-header'>
 				<Logo />
 				<RouterHeader>
-					{/* <Link to='/'> */}
+					<Link to='/'>
 					<RouterText>Inicio</RouterText>
-					{/* </Link> */}
-					{/* <Link to='/sobre'> */}
+					</Link>
+					<Link to='/sobre'>
 					<RouterText>Sobre</RouterText>
-					{/* </Link> */}
-					{/* <Link to='/servico'> */}
+					</Link>
+					<Link to='/servico'>
 					<RouterText>Serviço</RouterText>
-					{/* </Link> */}
-					{/* <Link to='/resultado'> */}
+					</Link>
+					<Link to='/resultado'>
 					<RouterText>Resultados</RouterText>
-					{/* </Link> */}
-					{/* <Link to='/portfolio'> */}
+					</Link>
+					<Link to='/portfolio'>
 					<RouterText>Portfólio</RouterText>
-					{/* </Link> */}
+					</Link>
 				</RouterHeader>
-				{/* <Link to='/contato'> */}
+				<Link to='/contato'>
 				<ButtonHeader>Contato</ButtonHeader>
-				{/* </Link> */}
+				</Link>
 			</div>
 		</HeaderS>
 	);
