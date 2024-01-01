@@ -13,11 +13,48 @@ export const HeaderS = styled.header`
 		align-items: center;
 		padding: 0 100px;
 	}
+	.icon-burger {
+		display: none;
+	}
+	@media (max-width: 480px) {
+		& {
+			width: 100%;
+			top: 0;
+			height: 75px;
+		}
+		.icon-burger {
+			display: block;
+			z-index: 9;
+			position: fixed;
+			left: 10px;
+		}
+		.container-header {
+			justify-content: space-around;
+		}
+	}
 `;
 
 export const RouterHeader = styled.div`
 	display: flex;
 	gap: 20px;
+	@media (max-width: 480px) {
+		& {
+			background-color: #25262b;
+			display: flex;
+			flex-direction: column;
+			padding: 90px 0 30px 0;
+			margin-left: 15px;
+			position: fixed;
+			border-radius: 10px;
+			transition: 0.5s;
+			overflow: hidden;
+			z-index: 8;
+			gap: 35px;
+			width: 0;
+			left: 0;
+			top: 0;
+		}
+	}
 `;
 
 export const RouterText = styled.h3`
@@ -46,6 +83,14 @@ export const RouterText = styled.h3`
 		visibility: visible;
 		width: 100%;
 	}
+	@media (max-width: 480px) {
+		& {
+			font-size: 2em;
+		}
+		&:hover::before {
+			width: 70%;
+		}
+	}
 `;
 
 export const ButtonHeader = styled.button`
@@ -59,5 +104,10 @@ export const ButtonHeader = styled.button`
 	&:hover {
 		transition: 1s;
 		transform: scale(1.1);
+	}
+	@media (max-width: 480px) {
+		& {
+			display: none;
+		}
 	}
 `;

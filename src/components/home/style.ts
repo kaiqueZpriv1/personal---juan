@@ -6,6 +6,16 @@ export const HomeS = styled.main`
 	.container-home {
 		display: flex;
 	}
+	@media (max-width: 480px) {
+		& {
+			padding: 250px 20px 100px 20px;
+		}
+		.container-home {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 `;
 
 export const HomeText = styled.div`
@@ -25,6 +35,20 @@ export const HomeText = styled.div`
 		font-size: 1.5em;
 		color: #d8d9d7;
 		font-weight: 500;
+	}
+	@media (max-width: 480px) {
+		justify-content: center;
+		align-items: center;
+		.title-home {
+			font-size: 3.6em;
+		}
+		.subtext-home {
+			font-size: 2em;
+		}
+		.paragrafo-home {
+			text-align: center;
+			font-size: 1.8em;
+		}
 	}
 `;
 export const CampButton = styled.div`
@@ -54,6 +78,12 @@ export const HomeImage = styled.div`
 		border-radius: 10px;
 		filter: drop-shadow(15px 15px 50px rgba(0, 0, 0, 1));
 	}
+	@media (max-width: 480px) {
+		position: initial;
+		.image-home {
+			display: none;
+		}
+	}
 `;
 
 export const HomeDetails = styled.div`
@@ -74,5 +104,10 @@ export const HomeDetails = styled.div`
 	}
 	.img-detail {
 		width: 40px;
+	}
+	@media (max-width: 480px) {
+		& {
+			display: none;
+		}
 	}
 `;

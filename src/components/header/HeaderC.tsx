@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ButtonHeader, HeaderS, RouterHeader, RouterText } from './style';
 import { Logo } from '../Logo/Logo';
 import { Link } from 'react-router-dom';
 
+// import mobile
+import { AiOutlineMenu } from 'react-icons/ai'
+
 export const HeaderC = () => {
+
+	const [menuMobile, setMenuMobile] = useState(true)
+	const handleMenu = () => {
+		setMenuMobile(!menuMobile)
+	}
+
 	return (
 		<HeaderS>
 			<div className='container-header'>
+				<AiOutlineMenu className='icon-burger' size={50} color='#fafafa' onClick={handleMenu} />
 				<Logo />
-				<RouterHeader>
+				<RouterHeader style={{width: menuMobile ? '0' : '65%'}} >
 					<Link to='/'>
 					<RouterText>Inicio</RouterText>
 					</Link>

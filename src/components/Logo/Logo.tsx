@@ -6,6 +6,7 @@ export const Logo = () => {
 	const LogoS = styled.div`
 		display: flex;
 		align-items: center;
+		/* display: none; */
 		.image-logo {
 			width: 80px;
 		}

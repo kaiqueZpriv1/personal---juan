@@ -11,6 +11,16 @@ export const AboutS = styled.section`
 		justify-content: center;
 		gap: 20px;
 	}
+	@media (max-width: 480px) {
+		& {
+			padding: 150px 20px 100px 20px;
+		}
+		.container-about {
+			flex-direction: column-reverse;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 `;
 
 export const AboutText = styled.div`
@@ -28,10 +38,24 @@ export const AboutText = styled.div`
 		color: #d8d9d7;
 		font-weight: 500;
 	}
+	@media (max-width: 480px) {
+		& {
+			justify-content: center;
+			align-items: center;
+		}
+		.title-about {
+			font-size: 3em;
+		}
+		.paragrafo-about {
+			padding: 0 30px;
+			font-size: 1.2em;
+			text-align: center;
+		}
+	}
 `;
 
 export const ButtonAbout = styled.div`
-margin-top: 10px;
+	margin-top: 10px;
 	display: flex;
 	gap: 15px;
 	.btn-about {
@@ -41,7 +65,7 @@ margin-top: 10px;
 		border: none;
 		font-weight: 700;
 	}
-	.btn-about:hover{
+	.btn-about:hover {
 		transform: scale(1.1);
 		transition: 1s;
 		box-shadow: 0 0 5px #000;
@@ -62,6 +86,11 @@ margin-top: 10px;
 		background: #ba181b;
 		color: #d8d9d7;
 	}
+	@media (max-width: 480px){
+		.btn-about{
+			font-size: 1.3em;
+		}
+	}
 `;
 
 export const AboutImage = styled.div`
@@ -70,5 +99,11 @@ export const AboutImage = styled.div`
 		width: 330px;
 		height: 400px;
 		border-radius: 10px;
+	}
+	@media (max-width: 480px) {
+		.image-about {
+			width: 250px;
+			height: auto;
+		}
 	}
 `;
