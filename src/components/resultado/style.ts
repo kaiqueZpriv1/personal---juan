@@ -12,6 +12,11 @@ export const ResultadoS = styled.section`
 		justify-content: center;
 		gap: 30px;
 	}
+	@media (max-width: 480px) {
+		.container-resultado {
+			grid-template-columns: 400px;
+		}
+	}
 `;
 
 export const ResultadoBoxing = styled.div`
@@ -30,5 +35,16 @@ export const ResultadoBoxing = styled.div`
 		font-size: 1.5em;
 		color: #d8d9d7;
 		font-weight: 600;
+	}
+	@media (max-width: 480px) {
+		& {
+			flex-direction: column;
+		}
+		.image-resultado {
+			width: 250px;
+		}
+		.text-resultado {
+			text-align: center;
+		}
 	}
 `;

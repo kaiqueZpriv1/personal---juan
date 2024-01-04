@@ -12,6 +12,7 @@ import HomeImg from './image/juan-image-home.png';
 import Img1 from './image/musculação/item-1.png';
 import Img2 from './image/musculação/item-3.png';
 import { Fade } from 'react-awesome-reveal';
+import { Link } from 'react-router-dom';
 export const HomeC = () => {
 	return (
 		<>
@@ -35,8 +36,12 @@ export const HomeC = () => {
 								Especialista em entregar resultados !
 							</p>
 							<CampButton>
-								<HomeButton>Portfólio</HomeButton>
-								<HomeButton>Contato</HomeButton>
+								<Link to='/portfolio'>
+									<HomeButton>Portfólio</HomeButton>
+								</Link>
+								<Link to='/contato'>
+									<HomeButton>Contato</HomeButton>
+								</Link>
 							</CampButton>
 						</HomeText>
 						<HomeImage>

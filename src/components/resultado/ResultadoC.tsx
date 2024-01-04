@@ -26,7 +26,12 @@ export const ResultadoC = () => {
 						</h3>
 					</ResultadoBoxing>
 
-					<ResultadoBoxing>
+					<ResultadoBoxing >
+						<img
+							src={ResultadoImg2}
+							alt='resultado'
+							className='image-resultado'
+						/>
 						<h3
 							className='
                     text-resultado'>
@@ -35,11 +40,6 @@ export const ResultadoC = () => {
 							exercícios personalizados. O cliente também recebeu orientação
 							pessoal sobre como manter os resultados a longo prazo.
 						</h3>
-						<img
-							src={ResultadoImg2}
-							alt='resultado'
-							className='image-resultado'
-						/>
 					</ResultadoBoxing>
 				</Fade>
 			</div>

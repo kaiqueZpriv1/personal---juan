@@ -10,12 +10,21 @@ export const ContatoS = styled.div`
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-        gap: 150px;
+		gap: 150px;
+	}
+	@media (max-width: 480px) {
+		& {
+			padding: 100px 0 0 0;
+		}
+		.container-contato {
+			flex-direction: column;
+			gap: 20px;
+		}
 	}
 `;
 
 export const PageContato = styled.div`
-margin-top: 50px;
+	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -34,5 +43,14 @@ margin-top: 50px;
 		color: #d8d9d7;
 		transform: scale(1.1);
 		transition: 1s;
+	}
+	@media (max-width: 480px) {
+		.text-contato {
+			font-size: 2.5em;
+		}
+		.text-contato {
+			font-size: 1.5em;
+			text-align: center;
+		}
 	}
 `;

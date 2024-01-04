@@ -2,7 +2,7 @@ import React from 'react';
 import { ContatoS, PageContato } from './style';
 import { Logo } from '../Logo/Logo';
 import { Fade } from 'react-awesome-reveal';
-
+import { Link } from 'react-router-dom';
 export const ContatoC = () => {
 	return (
 		<ContatoS>
@@ -10,11 +10,21 @@ export const ContatoC = () => {
 				<Logo />
 				<div className='container-contato'>
 					<PageContato>
-						<h3 className='title-contato'>Paginas</h3>
-						<p className='text-contato'>Home</p>
-						<p className='text-contato'>Sobre mim</p>
-						<p className='text-contato'>Serviços</p>
-						<p className='text-contato'>Portfólio</p>
+						<Link to='/'>
+							<p className='text-contato'>Inicio</p>
+						</Link>
+						<Link to='/sobre'>
+							<p className='text-contato'>Sobre</p>
+						</Link>
+						<Link to='/servico'>
+							<p className='text-contato'>Serviço</p>
+						</Link>
+						<Link to='/resultado'>
+							<p className='text-contato'>Resultados</p>
+						</Link>
+						<Link to='/portfolio'>
+							<p className='text-contato'>Portfólio</p>
+						</Link>
 					</PageContato>
 					<PageContato>
 						<h3 className='title-contato'>Redes Sociais</h3>
@@ -33,7 +43,7 @@ export const ContatoC = () => {
 							Instagram
 						</a>
 						<a
-							href='https://www.instagram.com/personal.juanbueno/'
+							href='https://www.facebook.com/juan.bueno.73'
 							target='_blank'
 							rel='noreferrer'
 							className='text-contato'>
@@ -48,13 +58,19 @@ export const ContatoC = () => {
 						</a>
 					</PageContato>
 					<PageContato>
-						<p className='text-contato'>Telefone: 11 95488-6575</p>
+						<a
+							href='https://criarmeulink.com.br/u/1704410269'
+							target='_blank'
+							rel='noreferrer'
+							className='text-contato'>
+							Telefone: 11 95488-6575
+						</a>
 						<a
 							href='mailto:juan_bueno478@hotmail.com?subject=&amp;body='
 							target='_blank'
 							rel='noreferrer'
 							className='text-contato'>
-							asasas@gmail.com
+							juan_bueno478@hotmail.com
 						</a>
 						<p className='text-contato'></p>
 					</PageContato>
