@@ -37,6 +37,7 @@ export const HeaderS = styled.header`
 export const RouterHeader = styled.div`
 	display: flex;
 	gap: 20px;
+	margin-right: 150px;
 	@media (max-width: 480px) {
 		& {
 			background-color: #25262b;
@@ -101,6 +102,7 @@ export const ButtonHeader = styled.button`
 	font-weight: 700;
 	border: none;
 	color: #d8d9d7;
+	/* display: none; */
 	&:hover {
 		transition: 1s;
 		transform: scale(1.1);
