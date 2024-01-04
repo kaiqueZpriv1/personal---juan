@@ -40,7 +40,7 @@ export const HomeText = styled.div`
 		justify-content: center;
 		align-items: center;
 		.title-home {
-			font-size: 3.6em;
+			font-size: 3.4em;
 		}
 		.subtext-home {
 			font-size: 2em;
