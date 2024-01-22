@@ -72,7 +72,7 @@ export const ContatoC = () => {
 							className='text-contato'>
 							juan_bueno478@hotmail.com
 						</a>
-						<p className='text-contato'></p>
+						<p className='text-contato'>São Paulo - SP</p>
 					</PageContato>
 				</div>
 			</Fade>
